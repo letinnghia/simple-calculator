@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+html {
+    font-family: 'DM Mono', monospace;
+    background-color: rgb(122, 166, 211);
+}
+
+#mainBoard {
+    position: relative;
+    height: 500px; width: 400px;
+    top: 20px;
+    margin: auto;
+    border: 10px solid rgb(65, 65, 65);
+    border-radius: 25px;
+    background-color: rgb(120, 183, 188);
+}
+
+#screen {
+    position: absolute;
+    top: 16px; left: 16px;
+    height: 100px; width: 360px;
+    border: 4px solid rgb(75, 75, 75);
+    border-radius: 15px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(182, 210, 231);
+}
+
+#numBoard {
+    position: absolute;
+    bottom: 30px; left: 11px;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+#numBoard input{
+    height: 74px; width: 74px;
+    border-radius: 15px;
+    font-size: 40px;
+    background-color: rgb(174, 255, 243);
+
+}
+
+#numBoard input#ans{
+    font-size: 27px;
+}
+
+#operations {
+    position: absolute;
+    bottom: 114px; right: 13px;
+    border-collapse: separate;
+    border-spacing: 4px;
+    border-radius: 10px;
+}
+
+#operations input {
+    height: 55px; width: 55px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+#operations input#delete {
+    font-size: 18px;
+    background-color: rgb(255, 225, 188);
+}
+
+#operations input#clear {
+    font-size: 18px;
+    background-color: rgb(255, 150, 150);
+}
+
+#equal {
+    position: absolute;
+    bottom: 37px; right: 18px;
+    height: 74px; width: 116px;
+    border-radius: 10px;
+    font-size: 60px;
+    background-color: aqua;
+}
+
+input:active {
+    transform: scale(0.96);
+}
+
+input {
+    font-weight: 600;
+}
+.display {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#input {
+    top: 0; left: 8px;
+}
+
+#output {
+    bottom: 0; right: 8px; 
+}
+
