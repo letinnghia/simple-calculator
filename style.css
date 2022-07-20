@@ -9,7 +9,7 @@ html {
     position: relative;
     height: 500px; width: 400px;
     top: 20px;
-    margin: auto;
+    margin: 0 auto;
     border: 10px solid rgb(65, 65, 65);
     border-radius: 25px;
     background-color: rgb(120, 183, 188);
@@ -42,7 +42,7 @@ html {
 }
 
 #numBoard input#ans{
-    font-size: 27px;
+    font-size: 25px;
 }
 
 #operations {
@@ -60,12 +60,12 @@ html {
 }
 
 #operations input#delete {
-    font-size: 18px;
+    font-size: 20px;
     background-color: rgb(255, 225, 188);
 }
 
 #operations input#clear {
-    font-size: 18px;
+    font-size: 20px;
     background-color: rgb(255, 150, 150);
 }
 
@@ -75,7 +75,7 @@ html {
     height: 74px; width: 116px;
     border-radius: 10px;
     font-size: 60px;
-    background-color: aqua;
+    background-color: rgb(136, 198, 255);
 }
 
 input:active {
@@ -84,7 +84,10 @@ input:active {
 
 input {
     font-weight: 600;
+    border: 2px solid rgb(24, 24, 24);
+    padding: 0px;
 }
+
 .display {
     position: absolute;
     font-size: 30px;
@@ -99,3 +102,8 @@ input {
     bottom: 0; right: 8px; 
 }
 
+@media only screen and (max-width: 576px) {
+    #mainBoard {
+        transform: scale(0.8);
+    }
+}
