@@ -2,7 +2,7 @@
 
 html {
     font-family: 'DM Mono', monospace;
-    background-color: rgb(122, 166, 211);
+    background-color: rgb(109, 117, 183);
 }
 
 #mainBoard {
@@ -104,6 +104,10 @@ input {
 
 @media only screen and (max-width: 576px) {
     #mainBoard {
-        transform: scale(0.8);
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        right: 0px;
+        align-items: stretch;
     }
 }
